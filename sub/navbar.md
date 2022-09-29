@@ -1,11 +1,8 @@
-* [README](/README.md)
-* [doc1](/doc1.md)
-* [doc2](/doc2.md)
+# Yocto for DC
 
-* [..README](/../README.md)
-* [..doc1](/../doc1.md)
-* [..doc2](/../doc2.md)
+* [Home][home]
+* [sub//doc1](/sub/doc1.md)
+* [sub\\doc2](/sub/doc2.md)
 
-* [subREADME](/sub/README.md)
-* [subdoc1](/sub/doc1.md)
-* [subdoc2](/sub/doc2.md)
+[home]: /README.md
+[logo]: /images/logo.png
