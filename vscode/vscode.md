@@ -5,7 +5,7 @@
 # Presentation
 *VSCode* can be used as development software in the *Yocto* environment.
 
-# VSCode Installation
+# Installation
 In this document, *VSCode* is used to illustrate the use of the development software in the *Yocto* environment.
 
 *VSCode* can be installed from *Ubuntu Software*.\
@@ -16,7 +16,7 @@ Add *C/C++* and *C/C++ Extension Pack* extensions.\
 ![](/images/VSCode_001.png)\
 ![](/images/VSCode_002.png)
 
-# VSCode developpment
+# Developpment
 *VSCode* must be run from a [initialized SDK environment](/index.md/#initialize-sdk-environment):
 **![warning] TODO correct link**\
     *\<workspace>: project folder*
@@ -25,7 +25,7 @@ Add *C/C++* and *C/C++ Extension Pack* extensions.\
 code <workspace>
 ```
 
-## VSCode build
+## Build
 In the project folder, create or add build task configurations in *.vscode/tasks.json* file:
 ```json
 {
@@ -52,7 +52,7 @@ In the project folder, create or add build task configurations in *.vscode/tasks
 Project can be build from *Terminal/Run Build Task... (Ctrl+Shift+B)* menu
 and clean from *Terminal/Run Task...* menu (make clean).
 
-## VSCode debug
+## Debug
 A script file must be created to source the SDK before starting the debugger.
 Create *~/.config/Code/User/YoctoSdkGdb.sh*:
 ```bash
