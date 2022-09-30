@@ -18,8 +18,8 @@ Add *C/C++* and *C/C++ Extension Pack* extensions.\
 
 # VSCode developpment
 *VSCode* must be run from a [initialized SDK environment](/index.md/#initialize-sdk-environment):
-**![warning] TODO correct link**
-* \<workspace>: project folder
+**![warning] TODO correct link**\
+    \<workspace>: project folder
 ```bash
 . /opt/landis/0.1/environment-setup-cortexa8t2hf-neon-poky-linux-gnueabi
 code <workspace>
@@ -79,8 +79,8 @@ In the project folder, create or add debug launch tasks configuration in *.vscod
 }
 ```
 
-*gdbserver* must be run in the DC to launch the application to be debugged:
-* \<application>: path to the application
+*gdbserver* must be run in the DC to launch the application to be debugged:\
+    \<application>: path to the application
 ```bash
 gdbserver :3389 <application> --no-background --verbose
 ```
