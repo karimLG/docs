@@ -18,10 +18,11 @@ Add *C/C++* and *C/C++ Extension Pack* extensions.\
 
 # VSCode developpment
 *VSCode* must be run from a [initialized SDK environment](/index.md/#initialize-sdk-environment):
-[initialized SDK environment](/index.md)
-[initialized SDK environment](/index.md/#yocto-project-documentation-for-dcs)
-[initialized SDK environment](/index.md#yocto-project-documentation-for-dcs)
+
 **![warning] TODO correct link**
+[initialized SDK environment](/index.md)\
+[initialized SDK environment](/index.md/#test)\
+[initialized SDK environment](/index.md#test)
 >\<workspace>: project folder
 ```bash
 . /opt/landis/0.1/environment-setup-cortexa8t2hf-neon-poky-linux-gnueabi
