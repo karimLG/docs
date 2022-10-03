@@ -37,39 +37,10 @@ This adds additional features.
 
 Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [releases.ubuntu.com/22.04](https://releases.ubuntu.com/22.04)
 
-AAAAAAAAAAAAAAAAAAAAAAAAAAA
-|  |  |
-|--|--|
-| **Start VirtualBox** (v6.1.36 for example) | ![](/images/VirtualBox_000.png)
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-|  |  |
-|--|--|
-| **Start VirtualBox** (v6.1.36 for example) | /images/VirtualBox_000.png
-
-AAAAAAAAAAAAAAAAAAAAAAAAAAA
-|  |  |
-|--|--|
-| **Start VirtualBox** (v6.1.36 for example) | ![](/images/VirtualBox_000.png)|
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-|  |  |
-|--|--|
-| **Start VirtualBox** (v6.1.36 for example) | /images/VirtualBox_000.png|
-
-| **Create a virtual machine** (Menu Machine/New…) <br> • Type: Linux <br> • Version: Ubuntu (64-bit) <br> • Memory size: at least 8GB <br> • Hard disk: Create a virtual hard disk now <br> | ![](/images/VirtualBox_001.png)
-| • File Size: at least 150GB <br> • Hard disk file type: VDI (VirtualBox Disk Image) <br> • Storage on physical hard disk: Dynamically allocated | ![](/images/VirtualBox_002.png)
-| **Settings** | ![](/images/VirtualBox_003.png)
-| **General / Advanced** <br> • Shared Clipboard: Bidirectional <br> • Drag’n’Drop: Bidirectional | ![](/images/VirtualBox_004.png)
-| **System / Processor** <br> • Processor(s): try just less than actual host processor count | ![](/images/VirtualBox_005.png)
-| **Network** (internet access) <br> Attached to : NAT | ![](/images/VirtualBox_006.png)
-| **Network** (DC access) <br> • Attached to : Bridged Adapter <br> • Name: *Select actual adapter* <br> •  Adapter Type: *try PCnet-FAST III* <br> • Promiscuous Mode: Allow All<br> • MAC Address: *The actual adapter address* | ![](/images/VirtualBox_007.png)
-| **Insert Ubuntu image disk** <br> Storage <br> • Controller: IDE <br>  - Empty <br>   · Choose a disk file... <br>     Select Ubuntu desktop 20.04 image (*.iso) <br>   · Live CD/DVD: enabled | ![](/images/VirtualBox_010.png)
-| **Start** the virtual machine | ![](/images/VirtualBox_011.png)
-| Proceed to **Ubuntu installation** | ![](/images/VirtualBox_012.png)
-| **Remove Ubuntu image disk** <br> Menu Devices<br>  Optical Drives<br>    Remove disk from virtual drive | ![](/images/VirtualBox_013.png)
-| **Guest Additions** enables better performance and functionality<br>Menu Devices<br>  Insert **Guest Additions** CD image... <br>    Image (VBoxGuestAdditions.iso) is in VirtualBox installation folder | ![](/images/VirtualBox_014.png)
-
+|                                |                                            |
+|--------------------------------|--------------------------------------------|
+|**Start VirtualBox** (v6.1.36 for example)| Workspace configuration & basic operations |
+|**Start VirtualBox** (v6.1.36 for example)| Development using Visual Studio Code       |
 
 ## L+G services access
 
