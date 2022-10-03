@@ -39,7 +39,7 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 
 |                                |                                            |
 |--------------------------------|--------------------------------------------|
-|**Start VirtualBox** (v6.1.36 for example)| Workspace configuration & basic operations |
+|**Start VirtualBox** (v6.1.36 for example)| ![](/images/VirtualBox_000.png)  |
 |**Start VirtualBox** (v6.1.36 for example)| Development using Visual Studio Code       |
 
 ## L+G services access
