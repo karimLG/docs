@@ -40,7 +40,7 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 |                                |                                            |
 |--------------------------------|--------------------------------------------|
 |**Start VirtualBox** (v6.1.36 for example)| ![](/images/VirtualBox_000.png)  |
-|**Start VirtualBox** (v6.1.36 for example)| Development using Visual Studio Code       |
+|**Create a virtual machine** (Menu Machine/New…) <br> • Type: Linux <br> • Version: Ubuntu (64-bit) <br> • Memory size: at least 8GB <br> • Hard disk: Create a virtual hard disk now <br> | Development using Visual Studio Code       |
 
 ## L+G services access
 
