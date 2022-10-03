@@ -21,6 +21,7 @@ It contains repo manifest files describing the directories that are visible and 
 ## Generic layers
 Generic Yocto layers which are mirrored on gerrit.
 Latest LTS branch for those layers : kirkstone.
+
 |                              |                                                                   |
 |------------------------------|-------------------------------------------------------------------|
 | `DC/poky-mirror`             | Poky sources mirror for data concentrators                        |
