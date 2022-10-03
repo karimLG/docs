@@ -39,8 +39,19 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 
 |   |   |
 |---|---|
-|**Start VirtualBox** (v6.1.36 for example)| ![](/images/VirtualBox_000.png)
-|**Create a virtual machine** (Menu Machine/New…) <br> • Type: Linux <br> • Version: Ubuntu (64-bit) <br> • Memory size: at least 8GB <br> • Hard disk: Create a virtual hard disk now <br> | Development using Visual Studio Code
+| **Start VirtualBox** (v6.1.36 for example) | ![](Pictures/VirtualBox_000.png)
+| **Create a virtual machine** (Menu Machine/New…) <br> • Type: Linux <br> • Version: Ubuntu (64-bit) <br> • Memory size: at least 8GB <br> • Hard disk: Create a virtual hard disk now <br> | ![](Pictures/VirtualBox_001.png)
+| • File Size: at least 150GB <br> • Hard disk file type: VDI (VirtualBox Disk Image) <br> • Storage on physical hard disk: Dynamically allocated | ![](Pictures/VirtualBox_002.png)
+| **Settings** | ![](Pictures/VirtualBox_003.png)
+| **General / Advanced** <br> • Shared Clipboard: Bidirectional <br> • Drag’n’Drop: Bidirectional | ![](Pictures/VirtualBox_004.png)
+| **System / Processor** <br> • Processor(s): try just less than actual host processor count | ![](Pictures/VirtualBox_005.png)
+| **Network** (internet access) <br> Attached to : NAT | ![](Pictures/VirtualBox_006.png)
+| **Network** (DC access) <br> • Attached to : Bridged Adapter <br> • Name: *Select actual adapter* <br> •  Adapter Type: *try PCnet-FAST III* <br> • Promiscuous Mode: Allow All<br> • MAC Address: *The actual adapter address* | ![](Pictures/VirtualBox_007.png)
+| **Insert Ubuntu image disk** <br> Storage <br> • Controller: IDE <br>  - Empty <br>   · Choose a disk file... <br>     Select Ubuntu desktop 20.04 image (*.iso) <br>   · Live CD/DVD: enabled | ![](Pictures/VirtualBox_010.png)
+| **Start** the virtual machine | ![](Pictures/VirtualBox_011.png)
+| Proceed to **Ubuntu installation** | ![](Pictures/VirtualBox_012.png)
+| **Remove Ubuntu image disk** <br> Menu Devices<br>  Optical Drives<br>    Remove disk from virtual drive | ![](Pictures/VirtualBox_013.png)
+| **Guest Additions** enables better performance and functionality<br>Menu Devices<br>  Insert **Guest Additions** CD image... <br>    Image (VBoxGuestAdditions.iso) is in VirtualBox installation folder | ![](Pictures/VirtualBox_014.png)
 
 ## L+G services access
 
