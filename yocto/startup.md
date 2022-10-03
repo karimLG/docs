@@ -321,7 +321,8 @@ docker build -t landis_yocto sources/meta-application-fr/scripts
 ```
 
 ## Build host file system
-Useful build host locations are reported here
+Useful build host locations are reported here:
+
 |          |                       |
 |----------|-----------------------|
 |**~/**    | user’s home directory | 
@@ -339,6 +340,7 @@ The Yocto structure is presented here: [xxx](\yocto\architecture.md).
 
 ## Machines
 The available machines are:
+
 |                       |                                             |
 |-----------------------|---------------------------------------------|
 |**cr5-g1**             | DC for French market, G1 PLC technology     |
@@ -348,6 +350,7 @@ The available machines are:
 
 ## Images
 The available images are:
+
 |                       |                                             |
 |-----------------------|---------------------------------------------|
 |**dc-base-image**      | minimalistic image ~2MiB                    |
@@ -418,6 +421,7 @@ IP addresses have to be set manually, other variables can be set from the `/tftp
 >Note: *100.0.0.50* is the build host IP address
 
 On a [console terminal](#console-connection):
+
 |   |   |
 |---|---|
 | **Interrupt** the u-boot boot process by pressing a key | ![](/images/TFTP_000.png)
@@ -428,6 +432,7 @@ On a [console terminal](#console-connection):
 
 Boot sequence must be stopped to boot on NFS.\
 On a [console terminal](#console-connection):
+
 |   |   |
 |---|---|
 |**Interrupt** the u-boot boot process by pressing a key | ![](/images/TFTP_000.png)

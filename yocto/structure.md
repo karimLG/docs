@@ -34,6 +34,7 @@ Landis specific layers created and managed by the French DC team at Montluçon.
 The Landis BSP layer contains contains the recipes to build the Linux kernel and the u-boot bootloader tools for the DC450S4 and other machines.
 The Linux and u-boot tools sources are respectively hosted in DC/linux and DC/u-boot repositories.
 The Linux 5.4 LTS revision and the 2012.02 u-boot revision are used.
+
 |                              |                                                                   |
 |------------------------------|-------------------------------------------------------------------|
 | `DC/meta-bsp`                | Yocto BSP layer for data concentrators                            |
@@ -43,6 +44,7 @@ The Linux 5.4 LTS revision and the 2012.02 u-boot revision are used.
 ## Landis system layer
 The meta-system layer contains the recipes which are hardware specific.
 For now it contains the u-log recipe that is used to fetch u-boot logs on Linux.
+
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
 | `DC/meta-system`             | Yocto system layer for data concentrators.                       |
@@ -51,6 +53,7 @@ For now it contains the u-log recipe that is used to fetch u-boot logs on Linux.
 ## Landis common application layer
 This layer contains the application recipes that will be shared between Finland and France DC teams.
 For now it contains recipes dedicated to the HSM module and the security service on the Linux side.
+
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
 | `DC/meta-application-common` | Yocto common application layer for data concentrators            |
@@ -60,6 +63,7 @@ For now it contains recipes dedicated to the HSM module and the security service
 
 ## Landis France layer
 The `DC/meta-application-fr` layer contains France specific application recipes for the DC450S4 Java and other machines.
+
 |                              |                                                                  |
 |------------------------------|------------------------------------------------------------------|
 | `DC/client-java-pik`         | Java PIK client for data concentrators                           |
