@@ -22,11 +22,12 @@ The Yocto Project is an open-source collaboration project that helps developers 
 The Yocto Project's focus is on improving the software development process for embedded Linux distributions.
 The Yocto Project provides interoperable tools, metadata, and processes that enable the rapid, repeatable development of Linux-based embedded systems in which every aspect of the development process can be customized.
 
-Cf. [yoctoproject.org](https://www.yoctoproject.org), [docs.yoctoproject.org](https://docs.yoctoproject.org)
+Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](https://docs.yoctoproject.org)
 
 # Documentation content
 
-|                                |                                        |
-|--------------------------------|----------------------------------------|
-|**[Startup](/yocto/startup.md)**| Workspace configuration & basic operations |
-|**[VSCode](/vscode/vscode.md)** | Development using Visual Studio Code   |
+|                                    |                                            |
+|------------------------------------|--------------------------------------------|
+|**[Structure](/yocto/structure.md)**| Yocto project structure                    |
+|**[Startup](/yocto/startup.md)**    | Workspace configuration & basic operations |
+|**[VSCode](/vscode/vscode.md)**     | Development using Visual Studio Code       |
