@@ -41,6 +41,7 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 |  |  |
 |--|--|
 | **Start VirtualBox** (v6.1.36 for example) | ![](/images/VirtualBox_000.png)
+
 | **Create a virtual machine** (Menu Machine/New…) <br> • Type: Linux <br> • Version: Ubuntu (64-bit) <br> • Memory size: at least 8GB <br> • Hard disk: Create a virtual hard disk now <br> | ![](/images/VirtualBox_001.png)
 | • File Size: at least 150GB <br> • Hard disk file type: VDI (VirtualBox Disk Image) <br> • Storage on physical hard disk: Dynamically allocated | ![](/images/VirtualBox_002.png)
 | **Settings** | ![](/images/VirtualBox_003.png)
