@@ -1,5 +1,8 @@
 # Architecture of the Yocto project for DCs
 
+The project is spread over several git repositories containing a Yocto project layer or the sources of a software component.
+These repositories are unified by the repo tool.
+
 [TOC]
 
 # Yocto structure
@@ -12,7 +15,8 @@ Here is a description of all the involved layers.
 ![](/images/YoctoStructure.png)
 
 ## Manifests
-The `DC/manifests` coàntains google repo manifests for DCs.
+The `DC/manifests` contains google repo manifests for DCs.
+It contains repo manifest files describing the directories that are visible and where they should be obtained from with git.
 
 ## Generic layers
 Generic Yocto layers which are mirrored on gerrit.
