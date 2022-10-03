@@ -1,6 +1,7 @@
 # Yocto for DC
 
 * [Home][home]
+* [Structure](/yocto/structure.md)
 * [Startup](/yocto/startup.md)
 * [VSCode](/vscode/vscode.md)
 * [Glossary](/glossary.md)

@@ -1,4 +1,4 @@
-# VSCode dev.
+# Yocto for DC
 
 * [Home][home]
 * [Glossary](/glossary.md)
