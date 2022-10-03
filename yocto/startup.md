@@ -20,7 +20,7 @@ It facilitates development by building and testing the project in an automated w
 Cf. [jenkins.io](https://www.jenkins.io)\
 L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landisgyr.net)
 
-[![][home]](#startup_yocto_for_dcs)
+[![][home]](#startup-yocto-for-dcs)
 
 # Requirements
 
@@ -57,7 +57,7 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 
 ## L+G services access
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # Working environment setting
 
 ## DC connection
@@ -332,7 +332,7 @@ Useful build host locations are reported here
 |**~/**   | user’s home directory | 
 |**~/dc/**| ...                   | 
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # DC project architecture
 
 ## Yocto structure
@@ -427,7 +427,7 @@ The available images are:
 |**dc-image**           | full featured image                         |
 |**dc-debug-image**     | ditto plus debug packages                   |
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # Build an image
 
 ## Initialize the workspace environment
@@ -449,7 +449,7 @@ MACHINE=<machine> bitbake <image>
 SSH a access is useful for remote debugging.\
  **/!\ TODO SSH access**
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # Test an image
 The DC can be run using an image located on the build host.
 * A TFTP server sends the Linux kernel image and the device tree
@@ -500,12 +500,12 @@ On a [console terminal](#console-connection):
 |**Interrupt** the u-boot boot process by pressing a key | ![](/images/TFTP_000.png)
 | Start **NFS** <br>   run nboot | ![](/images/NFS_000.png)
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # Flash an image
 
 **/!\ TODO**
 
-[![][home]](#table-of-contents)
+[![][home]](#startup-yocto-for-dcs)
 # Debug an image
 
 To improve development experiment, Yocto project builds SDK and extended SDK images.
