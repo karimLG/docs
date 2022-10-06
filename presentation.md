@@ -3,6 +3,7 @@
 This repository contains documentation on the Yocto project for data concentrators.
 
 [TOC]
+
 # Yocto project presentation
 The Yocto Project is an open-source collaboration project that helps developers create custom Linux-based systems.
 The Yocto Project's focus is on improving the software development process for embedded Linux distributions.
@@ -11,14 +12,6 @@ The Yocto Project provides interoperable tools, metadata, and processes that ena
 Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](https://docs.yoctoproject.org)
 
 # L+G services
-
->TEST...
-
-<iframe src="https://README.md" height="50%" width="50%"></iframe>
-<iframe src="README.md" height="50%" width="50%"></iframe>
-<iframe src="~/README.md" height="50%" width="50%"></iframe>
-
->...TEST
 
 ## Gerrit
 Gerrit is a free, web-based team collaboration tool that facilitates code reviewing and version control as it integrates closely with Git.
@@ -33,7 +26,7 @@ It facilitates development by building and testing the project in an automated w
 Cf. [jenkins.io](https://www.jenkins.io)\
 L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landisgyr.net)
 
-[![][home]](#development-with-yocto-for-dcs)
+[![][home]](#yocto-project-documentation-for-dcs)
 
 # Documentation content
 
@@ -45,3 +38,5 @@ L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landis
 |**[Development](/yocto/development.md)**| Basic development operations               |
 |**[VSCode](/vscode/vscode.md)**         | Development using Visual Studio Code       |
 |**[Glossary](/glossary.md)**            | Key terms used                             |
+
+[![][home]](#yocto-project-documentation-for-dcs)
