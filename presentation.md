@@ -16,7 +16,7 @@ Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](h
 
 <iframe src="https://README.md" height="50%" width="50%"></iframe>
 <iframe src="README.md" height="50%" width="50%"></iframe>
-<iframe src="/README.md" height="50%" width="50%"></iframe>
+<iframe src="~/README.md" height="50%" width="50%"></iframe>
 
 >...TEST
 
