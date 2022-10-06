@@ -12,9 +12,12 @@ Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](h
 
 # L+G services
 
->TEST
+>TEST...
 
 <iframe src="/navbar.md" height="200px" width="400px"></iframe>
+<iframe src="navbar.md" height="200px" width="400px"></iframe>
+
+>...TEST
 
 ## Gerrit
 Gerrit is a free, web-based team collaboration tool that facilitates code reviewing and version control as it integrates closely with Git.
