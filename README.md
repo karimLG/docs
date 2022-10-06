@@ -1,6 +1,6 @@
 # Yocto project documentation for DCs
 
-This repository contains **[documentation](/index.md)** on the Yocto project for data concentrators.
+This repository contains **[documentation](/presentation.md#documentation-content)** on the Yocto project for data concentrators.
 
 # Devices concerned:
 |                       |                                             |
@@ -28,7 +28,7 @@ Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](h
 
 |                                        |                                            |
 |----------------------------------------|--------------------------------------------|
-|**[Presentation](/index.md)**           | Yocto project presentation                 |
+|**[Presentation](/presentation.md)**           | Yocto project presentation                 |
 |**[Structure](/yocto/structure.md)**    | Yocto project structure                    |
 |**[Setup](/yocto/setup.md)**            | Workspace configuration                    |
 |**[Development](/yocto/development.md)**| Basic development operations               |

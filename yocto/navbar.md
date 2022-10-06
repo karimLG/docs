@@ -6,5 +6,5 @@
 * [Development](/yocto/setup.md)
 * [Glossary](/glossary.md)
 
-[home]: /index.md
+[home]: /presentation.md
 [logo]: /images/logo.png
