@@ -67,6 +67,8 @@ Usage:
 ```bash
 MACHINE=<machine> bitbake <image>
 ```
+>Note: cache cleanup (`MACHINE=<machine> bitbake <image> -c clean all`) should be considered should be considered if a cache-related problem is suspected. 
+
 >Note: `EXTRA_IMAGE_FEATURES` clearing (in `dc/build/conf/local.conf`) should be considered as the sources and symbols are making the produced images way bigger.
 
 # Add a DC SSH access
