@@ -40,3 +40,6 @@ L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landis
 |**[Glossary](/glossary.md)**            | Key terms used                             |
 
 [![][home]](#yocto-project-documentation-for-dcs)
+
+
+[home]: /images/ArrowUp.png

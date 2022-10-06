@@ -61,8 +61,8 @@ To initialize the workspace, in the `~/dc/` directory, `init-build-env` is sourc
 ## Build the image
 Once configured, bitbake can be used to build images.
 Appropriate image and machine should be selected.\
-    `<machine>`: relevant machine, for example *dc450-s4*\
-    `<image>`: relevant image, for example *dc-image*
+    `<machine>`: relevant [machine](#machines), for example *dc450-s4*\
+    `<image>`: relevant [image](#images), for example *dc-image*
 Usage:
 ```bash
 MACHINE=<machine> bitbake <image>
