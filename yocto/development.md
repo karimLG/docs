@@ -2,6 +2,8 @@
 This document intends to introduce essential material for DC development using the Yocto project.
 It describes how to set the working environment and how to build and test a DC image.
 
+>Note: working environment must be correctly [setup](/yocto/setup.md)
+
 [TOC]
 
 # DC project architecture
@@ -130,7 +132,7 @@ On a [console terminal](#console-connection):
 
 [![][home]](#development-with-yocto-for-dcs)
 
-# Development
+# SDK
 
 To improve development experiment, Yocto project builds SDK and extended SDK images.
 
@@ -168,13 +170,18 @@ SDK image is sourced to initialize the SDK environment:
 ```
 >Note: */opt/landis/0.1/* is the default SDK installation folder.
 
-## Develop an application
+[![][home]](#development-with-yocto-for-dcs)
+
+# Develop an application
+
+## Build an application
 
 In an [initialized SDK environment](#initialize-sdk-environment), toolchain can be used directly with Makefile and Autotools-based projects.\
 Or manually, for example:
 ```bash
 $CC helloworld.c - o helloworld
 ```
+
 ## Debug an application
 
 gdbserver must be run in the DC to launch the application (built with the image or separately) to be debugged:\
@@ -189,7 +196,34 @@ $GDB
 (gdb) target remote 100.0.0.1:3389
 (gdb) continue
 ```
+>Note: debug symbols are normaly generated during the SDK build
+
+[![][home]](#development-with-yocto-for-dcs)
+
+# Debug the image
+
+## Debug images
+In order to debug the firmware, the `dc-debug-image` or `dc-base-debug-image` images must be used.
+Those images are including some useful packages for debugging such as gdbserver and strace.
+
+It can also be handy to add debug symbols and application sources, to get meaningful backtraces
+within gdb. To do so you need to edit the `dc/build/conf/local.conf` file this way:
+
+```
+EXTRA_IMAGE_FEATURES = "dbg-pkgs src-pkgs"
+```
+
+>Note: initial `EXTRA_IMAGE_FEATURES` value must be restored after debugging
+as the sources and symbols are making the produced images way bigger.
+
+## Gdbserver
+
+Cf. [Debug an application](#debug-an-application) for gdb debugging of an image binary  (firmware.elf for example).
 
 
 [home]: /images/ArrowUp.png
 [warning]: /images/warning.png
+
+ >**![warning] TODO adjust below**
+
+ ## devtool
