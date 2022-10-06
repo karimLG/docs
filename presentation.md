@@ -1,22 +1,8 @@
 # Yocto project documentation for DCs
 
-This repository contains **[documentation](/index.md)** on the Yocto project for data concentrators.
+This repository contains documentation on the Yocto project for data concentrators.
 
-# Devices concerned:
-|                       |                                             |
-|-----------------------|---------------------------------------------|
-|**CR5-G1**             | DC for French market, G1 PLC technology     |
-|**CR6-G3**             | DC for French market, G3 PLC technology     |
-|**DC450-S3**           | L+G DC, penultimate version                 |
-|**DC450-s4**           | L+G DC, latest version                      |
-
-# DC presentation
-In a smart grid, the DC is a bridge between the information system and the meters.
-It is responsible for collecting data from meters and providing it to the information system.
-The DC is used to control each meter and to manage the PLC network.
-
-Currently the project is dedicated to DC450 and CRx devices.
-
+[TOC]
 # Yocto project presentation
 The Yocto Project is an open-source collaboration project that helps developers create custom Linux-based systems.
 The Yocto Project's focus is on improving the software development process for embedded Linux distributions.
@@ -24,11 +10,32 @@ The Yocto Project provides interoperable tools, metadata, and processes that ena
 
 Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](https://docs.yoctoproject.org)
 
+# L+G services
+
+>TEST
+
+<iframe src="/navbar.md" height="200px" width="400px"></iframe>
+
+## Gerrit
+Gerrit is a free, web-based team collaboration tool that facilitates code reviewing and version control as it integrates closely with Git.
+
+Cf. [gerritcodereview.com](https://www.gerritcodereview.com)\
+L+G Gerrit server address: [gerrit-eu.landisgyr.net](https://gerrit-eu.landisgyr.net)
+
+## Jenkins
+Jenkins is an open-source automation server.
+It facilitates development by building and testing the project in an automated way.
+
+Cf. [jenkins.io](https://www.jenkins.io)\
+L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landisgyr.net)
+
+[![][home]](#development-with-yocto-for-dcs)
+
 # Documentation content
 
 |                                        |                                            |
 |----------------------------------------|--------------------------------------------|
-|**[Presentation](/index.md)**           | Yocto project presentation                 |
+|**[Presentation](/presentation.md)**    | Yocto project presentation                 |
 |**[Structure](/yocto/structure.md)**    | Yocto project structure                    |
 |**[Setup](/yocto/setup.md)**            | Workspace configuration                    |
 |**[Development](/yocto/development.md)**| Basic development operations               |

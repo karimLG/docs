@@ -2,8 +2,9 @@
 
 * [Home][home]
 * [Structure](/yocto/structure.md)
-* [Startup](/yocto/startup.md)
-* [VSCode](/vscode/vscode.md)
+* [Setup](/yocto/setup.md)
+* [Development](/yocto/setup.md)
+* [VSCode](/vscode/development.md)
 * [Glossary](/glossary.md)
 
 [home]: /index.md

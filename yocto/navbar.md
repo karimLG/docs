@@ -2,7 +2,8 @@
 
 * [Home][home]
 * [Structure](/yocto/structure.md)
-* [Startup](/yocto/startup.md)
+* [Setup](/yocto/setup.md)
+* [Development](/yocto/setup.md)
 * [Glossary](/glossary.md)
 
 [home]: /index.md
