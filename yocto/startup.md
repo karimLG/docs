@@ -52,8 +52,6 @@ Download Ubuntu desktop 22.04 image (ubuntu-20.04.4-desktop-amd64.iso) from [rel
 | **Remove Ubuntu image disk** <br> Menu Devices<br>  Optical Drives<br>    Remove disk from virtual drive | ![](/images/VirtualBox_013.png)
 | **Guest Additions** enables better performance and functionality<br>Menu Devices<br>  Insert **Guest Additions** CD image... <br>    Image (VBoxGuestAdditions.iso) is in VirtualBox installation folder | ![](/images/VirtualBox_014.png)
 
-## L+G services access
-
 [![][home]](#startup-yocto-for-dcs)
 
 # Working environment setting
@@ -312,7 +310,7 @@ mkdir ~/dc && cd $_
 repo init -u ssh://gerrit-eu.landisgyr.net/DC/manifests -b kirkstone -m fr.xml
 repo sync
 ```
-A different branch can be selected, or a different manifest: `fi.xml` for instance for the Finland manifest.
+>A different branch can be selected, or a different manifest: `fi.xml` for instance for the Finland manifest.
 
 The docker images must be built by running in the `~/dc/` 
 directory:
@@ -323,18 +321,22 @@ docker build -t landis_yocto sources/meta-application-fr/scripts
 ## Build host file system
 Useful build host locations are reported here:
 
-|          |                       |
-|----------|-----------------------|
-|**~/**    | user’s home directory | 
-|**~/bsp/**| file system for NFS   | 
-|**~/dc/** | yocto working folder  | 
+|                     |                                  |
+|---------------------|----------------------------------|
+|**/nfsroot/bsp**     | file system for NFS              |
+|**/opt/landis/0.1/** | default SDK installation folder  |
+|**/tftpboot**        | TFTP server directory            |
+|**~/**               | user’s home directory            |
+|**~/bsp/**           | file system for NFS              |
+|**~/dc/**            | yocto working folder             |
+|**~/dc/sources**     | yocto layers working copy        |
 
 [![][home]](#startup-yocto-for-dcs)
 
 # DC project architecture
 
 ## Yocto structure
-The Yocto structure is presented here: [xxx](\yocto\architecture.md).
+The Yocto structure is presented here: [xxx](\yocto\structure.md).
 
 ## Image variants
 
@@ -378,10 +380,10 @@ Usage:
 ```bash
 MACHINE=<machine> bitbake <image>
 ```
->![warning] `EXTRA_IMAGE_FEATURES` clearing (in `dc/build/conf/local.conf`) should be considered as the sources and symbols are making the produced images way bigger.
+>Note: `EXTRA_IMAGE_FEATURES` clearing (in `dc/build/conf/local.conf`) should be considered as the sources and symbols are making the produced images way bigger.
 
 # Add a DC SSH access
-SSH a access is useful for remote debugging.\
+SSH a access is useful for remote debugging.
  >**![warning] TODO SSH access**
 
 [![][home]](#startup-yocto-for-dcs)
@@ -437,12 +439,6 @@ On a [console terminal](#console-connection):
 |---|---|
 |**Interrupt** the u-boot boot process by pressing a key | ![](/images/TFTP_000.png)
 | Start **NFS** <br>   run nboot | ![](/images/NFS_000.png)
-
-[![][home]](#startup-yocto-for-dcs)
-
-# Flash an image
-
->**![warning] TODO Flash an image ???**
 
 [![][home]](#startup-yocto-for-dcs)
 
