@@ -14,7 +14,7 @@ Cf. [yoctoproject.org](https://www.yoctoproject.org)\, [docs.yoctoproject.org](h
 
 >TEST...
 
-<iframe src="/navbar.md" height="200px" width="400px"></iframe>
+<iframe src="https://navbar.md" height="200px" width="400px"></iframe>
 <iframe src="navbar.md" height="200px" width="400px"></iframe>
 
 >...TEST
