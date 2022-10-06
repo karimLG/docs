@@ -4,26 +4,6 @@ It describes how to set the working environment and how to build and test a DC i
 
 [TOC]
 
-# Fetch the repositories
-To fetch the DC sources for the `kirkstone` branch, run the following command:\
-    `<username>`: build host username, for example *mdupond*
-```bash
-sudo usermod -aG docker <username>
-```
-Then log-out of the Ubuntu session and log-in again,
-```bash
-mkdir ~/dc && cd $_
-repo init -u ssh://gerrit-eu.landisgyr.net/DC/manifests -b kirkstone -m fr.xml
-repo sync
-```
->A different branch can be selected, or a different manifest: `fi.xml` for instance for the Finland manifest.
-
-The docker images must be built by running in the `~/dc/` 
-directory:
-```bash
-docker build -t landis_yocto sources/meta-application-fr/scripts
-```
-
 # DC project architecture
 
 ## Yocto structure
@@ -76,7 +56,7 @@ To initialize the workspace, in the `~/dc/` directory, `init-build-env` is sourc
 ```bash
 . init-build-env
 ```
->Note: before initialization, repositories synchronisation (`repo sync`) should be considered to update the Yocto layers.
+>Note: before initialization, repositories synchronisation (`repo sync`, cf. [setup](/yocto/setup.md#fetch-the-repositories)) should be considered to update the Yocto layers.
 
 ## Build the image
 Once configured, bitbake can be used to build images.

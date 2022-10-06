@@ -3,8 +3,6 @@ This document describes how to set the working environment for DC development us
 
 [TOC]
 
-[![][home]](#yocto-for-dcs-setup)
-
 # Build host / development host
 It has been decided to use a native Linux host, therefore a Linux PC or virtual machine.
 It is recommended to use Ubuntu 22.04.
@@ -273,7 +271,29 @@ This allows Yocto to fetch Gerrit repositories using HTTPS without prompting for
 git clone https://gerrit-eu.landisgyr.net/DC/manifests /tmp/.manifests
 ```
 
+[![][home]](#yocto-for-dcs-setup)
 
+# Fetch the repositories
+To fetch the DC sources for the `kirkstone` branch, run the following command:\
+    `<username>`: build host username, for example *mdupond*
+```bash
+sudo usermod -aG docker <username>
+```
+Then log-out of the Ubuntu session and log-in again,
+```bash
+mkdir ~/dc && cd $_
+repo init -u ssh://gerrit-eu.landisgyr.net/DC/manifests -b kirkstone -m fr.xml
+repo sync
+```
+>A different branch can be selected, or a different manifest: `fi.xml` for instance for the Finland manifest.
+
+The docker images must be built by running in the `~/dc/` 
+directory:
+```bash
+docker build -t landis_yocto sources/meta-application-fr/scripts
+```
+
+[![][home]](#yocto-for-dcs-setup)
 
 
 [home]: /images/ArrowUp.png
