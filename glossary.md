@@ -43,4 +43,4 @@
 |**Virtual machine** | Software that functions as a virtual computer
 |**VSCode**          | Visual Studio Code: source code editor including building and debugging functions
 |**Yocto**           | The Yocto Project. Helps developers creating custom Linux-based systems
-|**Ubuntu Software** | <a name="recipe2"/>Ubuntu Linux comes with a default software center that lets install various software
+|**Ubuntu Software** | Ubuntu Linux comes with a default software center that lets install various software

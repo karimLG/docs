@@ -72,10 +72,10 @@ MACHINE=<machine> bitbake <image>
 >Note: cache cleanup (`MACHINE=<machine> bitbake <image> -c clean all`) should be considered if a cache-related problem is suspected.
 >Note: `EXTRA_IMAGE_FEATURES` clearing (in `dc/build/conf/local.conf`) should be considered as the sources and symbols are making the produced images way bigger.
 
-Building generates three different outputs:
+Building generates up to three different outputs:
 * `dc-image.tar.gz`: an image tarball that can be used for NFS based developments.
-* `dc-image.squashfs.tar.gz`: a tarball containing the image tarball break-out in several squashfs module that can be installed on the NAND memory.
 * `zImage`: a kernel image that is also shipped in the image tarball.
+* `dc-image.squashfs.tar.gz`: a tarball containing the image tarball break-out in several squashfs module that can be installed on the NAND memory (France only).
 
 # Add a DC SSH access
 SSH a access is useful for remote debugging.
@@ -178,7 +178,7 @@ devtool is a convenient command for building and deploying programs to be debugg
 CF. [Yocto docs](https://docs.yoctoproject.org/ref-manual/devtool-reference.html)
 
 Main options are:\
-    `<recipe>`: [recipe](/glossary.md#recipe) [recipe](/glossary.md#recipe2) to modify\
+    `<recipe>`: [recipe] to modify\
     `<host>`: deployment target
 
 To modify the source for a recipe:
@@ -251,6 +251,7 @@ Cf. [Debug an application](#debug-an-application) for gdb debugging of an image 
 
 [home]: /images/ArrowUp.png
 [warning]: /images/warning.png
+[recipe]: /glossary.md#recipe
 
  >**![warning] TODO adjust below**
 
