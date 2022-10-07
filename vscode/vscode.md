@@ -5,6 +5,8 @@
 # Presentation
 VSCode can be used as development software in the Yocto environment.
 
+Cf. [code.visualstudio.com/docs](https://code.visualstudio.com/docs), [license](https://code.visualstudio.com/license)
+
 # Installation
 In this document, VSCode is used to illustrate the use of the development software in the Yocto environment.
 
