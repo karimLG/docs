@@ -374,8 +374,8 @@ To initialize the workspace, in the `~/dc/` directory, `init-build-env` is sourc
 ## Build the image
 Once configured, bitbake can be used to build images.
 Appropriate image and machine should be selected.\
-    `<machine>`: relevant machine, for example *dc450-s4*\
-    `<image>`: relevant image, for example *dc-image*
+    `<machine>`: relevant [machine](#machines), for example *dc450-s4*\
+    `<image>`: relevant [image](#images), for example *dc-image*
 Usage:
 ```bash
 MACHINE=<machine> bitbake <image>
@@ -395,7 +395,7 @@ The DC can be run using an image located on the build host.
 
 ## Image extraction
 Extract the image to test in the home directory:
-    `<machine>`: relevant machine, for example *dc450-s4*
+    `<machine>`: relevant [machine](#machines), for example *dc450-s4*
 ```bash
 cd ~/bsp
 sudo tar -xvf ~/dc/build/tmp/deploy/images/<machine>/dc-image-<machine>.tar.gz
@@ -403,7 +403,7 @@ sudo tar -xvf ~/dc/build/tmp/deploy/images/<machine>/dc-image-<machine>.tar.gz
 ```
 Create symbolic links from the `/tftpboot/` directory to the Linux kernel image and device tree from the extracted image:\
     `<username>`: build host username, for example *mdupond*\
-    `<machine>`: relevant machine, for example *cr5* or *dc450s4*
+    `<machine>`: relevant [machine](#machines), for example *cr5* or *dc450s4*
 ```bash
 ln -sv /home/<username>/bsp/boot/zImage /tftpboot/dc-kernel
 ln -sv /home/<username>/bsp/boot/<machine>.dtb /tftpboot/dc-dtb

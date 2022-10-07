@@ -72,6 +72,11 @@ MACHINE=<machine> bitbake <image>
 >Note: cache cleanup (`MACHINE=<machine> bitbake <image> -c clean all`) should be considered if a cache-related problem is suspected.
 >Note: `EXTRA_IMAGE_FEATURES` clearing (in `dc/build/conf/local.conf`) should be considered as the sources and symbols are making the produced images way bigger.
 
+Building generates three different outputs:
+* `dc-image.tar.gz`: an image tarball that can be used for NFS based developments.
+* `dc-image.squashfs.tar.gz`: a tarball containing the image tarball break-out in several squashfs module that can be installed on the NAND memory.
+* `zImage`: a kernel image that is also shipped in the image tarball.
+
 # Add a DC SSH access
 SSH a access is useful for remote debugging.
  >**![warning] TODO SSH access**
@@ -84,8 +89,8 @@ The DC can be run using an image located on the build host.
 * A NFS server provides the image root filesystem
 
 ## Image extraction
-Extract the image to test in the home directory:
-    `<machine>`: relevant machine, for example *dc450-s4*
+Extract the image to test in the home directory:\
+    `<machine>`: relevant [machine](#machines), for example *dc450-s4*
 ```bash
 cd ~/bsp
 sudo tar -xvf ~/dc/build/tmp/deploy/images/<machine>/dc-image-<machine>.tar.gz
@@ -93,7 +98,7 @@ sudo tar -xvf ~/dc/build/tmp/deploy/images/<machine>/dc-image-<machine>.tar.gz
 ```
 Create symbolic links from the `/tftpboot/` directory to the Linux kernel image and device tree from the extracted image:\
     `<username>`: build host username, for example *mdupond*\
-    `<machine>`: relevant machine, for example *cr5* or *dc450s4*
+    `<machine>`: relevant [machine](#machines), for example *cr5* or *dc450s4*
 ```bash
 ln -sv /home/<username>/bsp/boot/zImage /tftpboot/dc-kernel
 ln -sv /home/<username>/bsp/boot/<machine>.dtb /tftpboot/dc-dtb
@@ -121,7 +126,6 @@ On a [console terminal](#console-connection):
 | Update the **environement variables** <br>   tftp nboot  <br>   env import -t $loadaddr $filesize <br>   saveenv | ![](/images/TFTP_002.png)
 
 ## NFS start
-
 Boot sequence must be stopped to boot on NFS.\
 On a [console terminal](#console-connection):
 
@@ -133,7 +137,6 @@ On a [console terminal](#console-connection):
 [![][home]](#development-with-yocto-for-dcs)
 
 # SDK
-
 To improve development experiment, Yocto project builds SDK and extended SDK images.
 
 All SDKs consist of the following:
@@ -144,14 +147,12 @@ All SDKs consist of the following:
 Additionally, an extensible SDK has tools that allow you to easily add new applications and libraries to an image, modify the source of an existing component, test changes on the target hardware, and easily integrate an application.
 
 ## Build SDK
-
 In the [initialized workspace](#initialize-the-workspace-environment):
 ```bash
 bitbake dc-image -c populate_sdk
 ```
 
 ## Build extended SDK
-
 In the [initialized workspace](#initialize-the-workspace-environment):
 ```bash
 bitbake dc-image -c populate_sdk_ext
@@ -172,10 +173,39 @@ SDK image is sourced to initialize the SDK environment:
 
 [![][home]](#development-with-yocto-for-dcs)
 
+## devtool
+devtool is a convenient command for building and deploying programs to be debugged.
+CF. [Yocto docs](https://docs.yoctoproject.org/ref-manual/devtool-reference.html)
+
+Main options are:\
+    `<recipe>`: recipe to modify\
+    `<host>`: deployment target
+
+To modify the source for a recipe:
+```bash
+devtool modify <recipe>
+```
+To build a recipe:
+```bash
+devtool modify <recipe>
+```
+To deploy recipe output files:
+```bash
+devtool deploy-target <recipe> <host>
+```
+
+The deployment target (`<host>`) must be specified in `~/.ssh/config`
+    `<key>`: SSH private key for example */home/mdupond/dc-key.pem*
+```
+Host cr5-g1
+   User root
+   Hostname 100.0.0.1
+   IdentityFile <key>
+```
+
 # Develop an application
 
 ## Build an application
-
 In an [initialized SDK environment](#initialize-sdk-environment), toolchain can be used directly with Makefile and Autotools-based projects.\
 Or manually, for example:
 ```bash
@@ -183,7 +213,6 @@ $CC helloworld.c - o helloworld
 ```
 
 ## Debug an application
-
 gdbserver must be run in the DC to launch the application (built with the image or separately) to be debugged:\
     `<application>`: path to the application
 ```bash
@@ -217,7 +246,6 @@ EXTRA_IMAGE_FEATURES = "dbg-pkgs src-pkgs"
 as the sources and symbols are making the produced images way bigger.
 
 ## Gdbserver
-
 Cf. [Debug an application](#debug-an-application) for gdb debugging of an image binary  (firmware.elf for example).
 
 

@@ -6,6 +6,7 @@
 |**CRx**             | CR5/CR6. Landis+Gyr data concentrators for the French market
 |**DC**              | Data Concentrator: connecting point between an information system and a group of smart meters
 |**DC450**           | Landis+Gyr data concentrator device
+|**devtool**         | Command line tool providing functionality to help build, test and package software
 |**Development host**| The system used to build images in a Yocto Project Development environment. The build system is most often referred to as the build host
 |**docker**          | A container-based platform for building, deploying, and managing applications. A container is a lightweight virtualized RTE
 |**eSDK**            | extended Software Development Kit: SDK featuring tools to modify and test image 
