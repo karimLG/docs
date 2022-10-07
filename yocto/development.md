@@ -152,7 +152,7 @@ In the [initialized workspace](#initialize-the-workspace-environment):
 bitbake dc-image -c populate_sdk
 ```
 
-## Build extended SDK
+## Build extended SDK ([eSDK])
 In the [initialized workspace](#initialize-the-workspace-environment):
 ```bash
 bitbake dc-image -c populate_sdk_ext
@@ -173,8 +173,8 @@ SDK image is sourced to initialize the SDK environment:
 
 [![][home]](#development-with-yocto-for-dcs)
 
-## devtool
-devtool is a convenient command for building and deploying programs to be debugged.
+## [devtool]
+[devtool] is a convenient command for building and deploying programs to be debugged.
 CF. [Yocto docs](https://docs.yoctoproject.org/ref-manual/devtool-reference.html)
 
 Main options are:\
@@ -249,17 +249,29 @@ as the sources and symbols are making the produced images way bigger.
 Cf. [Debug an application](#debug-an-application) for gdb debugging of an image binary  (firmware.elf for example).
 
 
+
+# Create a release
+From a clean workspace, run:
+
+```bash
+cd ~/dc
+repo manifest -r -o .repo/manifests/releases/version-xxx.xml
+```
+
+This creates a manifest with fixed commit references ([SHA-1s]) for all the layers.  This manifest
+then needs to be commited to the `DC/manifests` Git repository.
+
+
 [home]: /images/ArrowUp.png
 [warning]: /images/warning.png
 
 [bitbake]: /glossary.md#bitbake
 [build host]: /glossary.md#buildhost
+[devtool]: /glossary.md#devtool
+[eSDK]: /glossary.md#esdk
 [DC]: /glossary.md#dc
 [DCs]: /glossary.md#dc
 [G1]: /glossary.md#g1
 [G3]: /glossary.md#g3
 [recipe]: /glossary.md#recipe
-
- >**![warning] TODO adjust below**
-
- ## devtool
+[SHA-1s]: /glossary.md#sha-1

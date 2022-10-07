@@ -3,7 +3,17 @@ This document describes how to set the working environment for DC development us
 
 [TOC]
 
-# [Build host] / development host
+## DC connection
+The DC can be connected to the development system on several ports.
+## [Ethernet] connection
+ ![](/images/DC_Ethernet_000.png)
+
+## Console connection
+Terminal setting:
+115200 bps, 8 data bits, no parity, 1 stop bit, no flow control\
+![](/images/DC_Console_000.png)
+
+# [Build host] / [development host]
 It has been decided to use a native Linux host, therefore a Linux PC or virtual machine.
 It is recommended to use Ubuntu 22.04.
 Regular setting uses Ubuntu 22.04 virtualized on VirtualBox.
@@ -155,10 +165,10 @@ Install python-is-python3:
 ```bash
 sudo apt update && sudo apt install python-is-python3
 ```
-## docker
-docker is a platform for virtualized runtime environments (RTE).
+## [docker]
+[docker] is a platform for virtualized runtime environments (RTE).
 
-Install docker:\
+Install [docker]:\
     `<email>`: relevant email address, for example *martin.dupond<nolink>@landisgyr.com*\
     Please note that quotes are mandatory
 ```bash
@@ -287,7 +297,7 @@ repo sync
 ```
 >A different branch can be selected, or a different manifest: `fi.xml` for instance for the Finland manifest.
 
-The docker images must be built by running in the `~/dc/` 
+The [docker] images must be built by running in the `~/dc/` 
 directory:
 ```bash
 docker build -t landis_yocto sources/meta-application-fr/scripts
@@ -300,3 +310,6 @@ docker build -t landis_yocto sources/meta-application-fr/scripts
 
 [build host]: /glossary.md#buildhost
 [Build host]: /glossary.md#buildhost
+[development host]: /glossary.md#developmenthost
+[docker]: /glossary.md#docker
+[Ethernet]: /glossary.md#ethernet
