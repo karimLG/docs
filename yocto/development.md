@@ -1,12 +1,12 @@
-# Development with Yocto for DCs
-This document intends to introduce essential material for DC development using the Yocto project.
-It describes how to set the working environment and how to build and test a DC image.
+# Development with Yocto for [DCs]
+This document intends to introduce essential material for [DC] development using the Yocto project.
+It describes how to set the working environment and how to build and test a [DC] image.
 
 >Note: working environment must be correctly [setup](/yocto/setup.md)
 
 [TOC]
 
-# DC project architecture
+# [DC] project architecture
 
 ## Yocto structure
 The Yocto structure is presented here: [xxx](\yocto\structure.md).
@@ -18,10 +18,10 @@ The available machines are:
 
 |                       |                                             |
 |-----------------------|---------------------------------------------|
-|**cr5-g1**             | DC for French market, G1 PLC technology     |
-|**dc450-g3**           | L+G DC, penultimate version                 |
-|**cr6-g3**             | DC for French market, G3 PLC technology     |
-|**dc450-s4**           | L+G DC, latest version                      |
+|**cr5-g1**             | [DC] for French market, [G1] PLC technology |
+|**dc450-g3**           | L+G [DC], penultimate version               |
+|**cr6-g3**             | [DC] for French market, [G3] PLC technology |
+|**dc450-s4**           | L+G [DC], latest version                    |
 
 ### Images
 The available images are:
@@ -36,8 +36,8 @@ The available images are:
 [![][home]](#development-with-yocto-for-dcs)
 
 
-# File system of the build host
-Useful build host locations are reported here:
+# File system of the [build host]
+Useful [build host] locations are reported here:
 
 |                     |                                  |
 |---------------------|----------------------------------|
@@ -61,7 +61,7 @@ To initialize the workspace, in the `~/dc/` directory, `init-build-env` is sourc
 >Note: before initialization, repositories synchronisation (`repo sync`, cf. [setup](/yocto/setup.md#fetch-the-repositories)) should be considered to update the Yocto layers.
 
 ## Build the image
-Once configured, bitbake can be used to build images.
+Once configured, [bitbake] can be used to build images.
 Appropriate image and machine should be selected.\
     `<machine>`: relevant [machine](#machines), for example *dc450-s4*\
     `<image>`: relevant [image](#images), for example *dc-image*
@@ -77,14 +77,14 @@ Building generates up to three different outputs:
 * `zImage`: a kernel image that is also shipped in the image tarball.
 * `dc-image.squashfs.tar.gz`: a tarball containing the image tarball break-out in several squashfs module that can be installed on the NAND memory (France only).
 
-# Add a DC SSH access
+# Add a [DC] SSH access
 SSH a access is useful for remote debugging.
  >**![warning] TODO SSH access**
 
 [![][home]](#development-with-yocto-for-dcs)
 
 # Test an image
-The DC can be run using an image located on the build host.
+The [DC] can be run using an image located on the [build host].
 * A TFTP server sends the Linux kernel image and the device tree
 * A NFS server provides the image root filesystem
 
@@ -97,7 +97,7 @@ sudo tar -xvf ~/dc/build/tmp/deploy/images/<machine>/dc-image-<machine>.tar.gz
 
 ```
 Create symbolic links from the `/tftpboot/` directory to the Linux kernel image and device tree from the extracted image:\
-    `<username>`: build host username, for example *mdupond*\
+    `<username>`: [build host] username, for example *mdupond*\
     `<machine>`: relevant [machine](#machines), for example *cr5* or *dc450s4*
 ```bash
 ln -sv /home/<username>/bsp/boot/zImage /tftpboot/dc-kernel
@@ -105,7 +105,7 @@ ln -sv /home/<username>/bsp/boot/<machine>.dtb /tftpboot/dc-dtb
 ```
 
 ## Bootloader configuration
-The bootloader environement variables of the DC must be set (**once**) to run the hosted image.
+The bootloader environement variables of the [DC] must be set (**once**) to run the hosted image.
 
 Create a `/tftpboot/nboot` file containing:
 ```
@@ -115,7 +115,7 @@ bootdelay=15
 ```
 
 IP addresses have to be set manually, other variables can be set from the `/tftpboot/nboot` file.
->Note: *100.0.0.50* is the build host IP address
+>Note: *100.0.0.50* is the [build host] IP address
 
 On a [console terminal](#console-connection):
 
@@ -181,15 +181,15 @@ Main options are:\
     `<recipe>`: [recipe] to modify\
     `<host>`: deployment target
 
-To modify the source for a recipe:
+To modify the source for a [recipe]:
 ```bash
 devtool modify <recipe>
 ```
-To build a recipe:
+To build a [recipe]:
 ```bash
 devtool modify <recipe>
 ```
-To deploy recipe output files:
+To deploy [recipe] output files:
 ```bash
 devtool deploy-target <recipe> <host>
 ```
@@ -213,7 +213,7 @@ $CC helloworld.c - o helloworld
 ```
 
 ## Debug an application
-gdbserver must be run in the DC to launch the application (built with the image or separately) to be debugged:\
+gdbserver must be run in the [DC] to launch the application (built with the image or separately) to be debugged:\
     `<application>`: path to the application
 ```bash
 gdbserver :3389 <application> --no-background --verbose
@@ -251,6 +251,13 @@ Cf. [Debug an application](#debug-an-application) for gdb debugging of an image 
 
 [home]: /images/ArrowUp.png
 [warning]: /images/warning.png
+
+[bitbake]: /glossary.md#bitbake
+[build host]: /glossary.md#buildhost
+[DC]: /glossary.md#dc
+[DCs]: /glossary.md#dc
+[G1]: /glossary.md#g1
+[G3]: /glossary.md#g3
 [recipe]: /glossary.md#recipe
 
  >**![warning] TODO adjust below**

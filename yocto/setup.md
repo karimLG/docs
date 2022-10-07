@@ -3,7 +3,7 @@ This document describes how to set the working environment for DC development us
 
 [TOC]
 
-# Build host / development host
+# [Build host] / development host
 It has been decided to use a native Linux host, therefore a Linux PC or virtual machine.
 It is recommended to use Ubuntu 22.04.
 Regular setting uses Ubuntu 22.04 virtualized on VirtualBox.
@@ -173,7 +173,7 @@ Install tftp:
 sudo apt install xinetd tftpd tftp
 ```
 Create an `/etc/xinetd.d/tftp` file that reads:\
-    `<username>`: build host username, for example *mdupond*
+    `<username>`: [build host] username, for example *mdupond*
 ```
 service tftp
 {
@@ -188,7 +188,7 @@ disable         = no
 }
 ```
 Create the `/tftpboot` directory:\
-    `<username>`: build host username, for example *mdupond*
+    `<username>`: [build host] username, for example *mdupond*
 ```bash
 sudo mkdir /tftpboot
 sudo chmod -R 777 /tftpboot
@@ -211,7 +211,7 @@ Add the directory containing the root filesystem to `/etc/exports`:
 /nfsroot/bsp                 0.0.0.0/0.0.0.0(rw,no_root_squash,no_subtree_check,sync)
 ```
 Create a symlink between `/nfsroot/bsp` and the place to will store the root filesystem:\
-    `<username>`: build host username, for example *mdupond*
+    `<username>`: [build host] username, for example *mdupond*
 ```bash
 mkdir ~/bsp
 sudo mkdir /nfsroot/
@@ -235,7 +235,7 @@ Generate SSH keys (default file and no passphrase):
 ```bash
 ssh-keygen -t ed25519
 ```
-Configure build host by adding the following entry to the `~/.ssh/config` file:\
+Configure [build host] by adding the following entry to the `~/.ssh/config` file:\
     `~/.ssh/config` may have to be created\
     `<username>`: L+G username, for example *dupondm*
 ```
@@ -275,7 +275,7 @@ git clone https://gerrit-eu.landisgyr.net/DC/manifests /tmp/.manifests
 
 # Fetch the repositories
 To fetch the DC sources for the `kirkstone` branch, run the following command:\
-    `<username>`: build host username, for example *mdupond*
+    `<username>`: [build host] username, for example *mdupond*
 ```bash
 sudo usermod -aG docker <username>
 ```
@@ -297,3 +297,6 @@ docker build -t landis_yocto sources/meta-application-fr/scripts
 
 
 [home]: /images/ArrowUp.png
+
+[build host]: /glossary.md#buildhost
+[Build host]: /glossary.md#buildhost

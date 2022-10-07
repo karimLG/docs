@@ -1,4 +1,4 @@
-# Yocto project documentation for DCs
+# Yocto project documentation for [DCs]
 
 This repository contains documentation on the Yocto project for data concentrators.
 
@@ -43,3 +43,5 @@ L+G Jenkins server address: [jenkins-eu.landisgyr.net](https://jenkins-eu.landis
 
 
 [home]: /images/ArrowUp.png
+
+[DCs]: /glossary.md#dc

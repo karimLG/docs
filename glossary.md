@@ -2,8 +2,8 @@
 
 |                    |                    |
 |--------------------|--------------------|
-|**bitbake**         | A build tool with the special focus of distributions and packages for embedded Linux cross compilation
-|**Build host**      | The system used to build images in a Yocto Project Development environment. The build system is sometimes referred to as the development host
+|**bitbake**         | {#bitbake} A build tool with the special focus of distributions and packages for embedded Linux cross compilation
+|**Build host**      | {#buildhost} The system used to build images in a Yocto Project Development environment. The build system is sometimes referred to as the development host
 |**CRx**             | CR5/CR6. Landis+Gyr data concentrators for the French market
 |**DC**              | Data Concentrator: connecting point between an information system and a group of smart meters
 |**DC450**           | Landis+Gyr data concentrator device

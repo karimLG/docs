@@ -14,7 +14,7 @@ This should reduce duplicated work to a minimum.
 Yocto project is managed using gerrit and therfore deposited in different git repositories.
 There are two types:
 * **sources repositories**: for tracking L+G sources and mirroring external sources.
-* **layer repositories**: for tracking or mirroring layers recipes and relevant material.
+* **layer repositories**: for tracking or mirroring layers [recipes] and relevant material.
 
 ![](/images/YoctoStructure.png)
 
@@ -35,7 +35,7 @@ Latest LTS branch for those layers : kirkstone.
 
 ## Landis BSP layer
 Landis specific layers created and managed by the French DC team at Montluçon.
-The Landis BSP layer contains contains the recipes to build the Linux kernel and the u-boot bootloader tools for the DC450S4 and other machines.
+The Landis BSP layer contains contains the [recipes] to build the Linux kernel and the u-boot bootloader tools for the DC450S4 and other machines.
 The Linux and u-boot tools sources are respectively hosted in DC/linux and DC/u-boot repositories.
 The Linux 5.4 LTS revision and the 2012.02 u-boot revision are used.
 
@@ -46,8 +46,8 @@ The Linux 5.4 LTS revision and the 2012.02 u-boot revision are used.
 | `DC/linux`                   | sources | Linux kernel sources for data concentrators                       |
 
 ## Landis system layer
-The meta-system layer contains the recipes which are hardware specific.
-For now it contains the u-log recipe that is used to fetch u-boot logs on Linux.
+The meta-system layer contains the [recipes] which are hardware specific.
+For now it contains the u-log [recipe] that is used to fetch u-boot logs on Linux.
 
 |                              |         |                                                                   |
 |------------------------------|---------|-------------------------------------------------------------------|
@@ -55,8 +55,8 @@ For now it contains the u-log recipe that is used to fetch u-boot logs on Linux.
 | `DC/u-log`                   | sources | Tool to read U-Boot logs from Linux userspace.                    |
 
 ## Landis common application layer
-This layer contains the application recipes that will be shared between Finland and France DC teams.
-For now it contains recipes dedicated to the HSM module and the security service on the Linux side.
+This layer contains the application [recipes] that will be shared between Finland and France DC teams.
+For now it contains [recipes] dedicated to the HSM module and the security service on the Linux side.
 
 |                              |         |                                                                   |
 |------------------------------|---------|-------------------------------------------------------------------|
@@ -66,7 +66,7 @@ For now it contains recipes dedicated to the HSM module and the security service
 | `DC/PLC-modem-firmware`      | sources | PLC modem management software                                     |
 
 ## Landis France layer
-The meta-application-fr layer contains France specific application recipes for the DC450S4 Java and other machines.
+The meta-application-fr layer contains France specific application [recipes] for the DC450S4 Java and other machines.
 
 | Landis France layer          |         |                                                                   |
 |------------------------------|---------|-------------------------------------------------------------------|
@@ -80,8 +80,13 @@ The meta-application-fr layer contains France specific application recipes for t
 | `DC/update-tool`             | sources | DC update tools programs                                          |
 
 ## Landis Finland layer
-The meta-application-fi layer contains Finland specific application recipes for the DC450S4 AIM.
+The meta-application-fi layer contains Finland specific application [recipes] for the DC450S4 AIM.
 
 | Landis Finland layer         |         |                                                                   |
 |------------------------------|---------|-------------------------------------------------------------------|
 | `DC/meta-application-fi`     | layer   | Yocto Finland specific application layer for data concentrators   |
+
+
+
+[recipe]: /glossary.md#recipe
+[recipes]: /glossary.md#recipe

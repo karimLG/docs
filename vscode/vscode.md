@@ -1,4 +1,4 @@
- # Visual Studio Code usage for Yocto / DC
+ # Visual Studio Code usage for Yocto / [DC]
 
 [TOC]
 
@@ -89,3 +89,6 @@ gdbserver :3389 <application> --no-background --verbose
 Application can be debugged from `Run/StartDebugging (F5)` menu
 or `Run and Debug (Ctrl+Shift+D)` perspective.\
 ![](/images/VSCode_004.png)
+
+
+[DC]: /glossary.md#dc
