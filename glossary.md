@@ -2,6 +2,7 @@
 
 |                    |                    |
 |--------------------|--------------------|
+|**bitbake**         | A build tool with the special focus of distributions and packages for embedded Linux cross compilation
 |**Build host**      | The system used to build images in a Yocto Project Development environment. The build system is sometimes referred to as the development host
 |**CRx**             | CR5/CR6. Landis+Gyr data concentrators for the French market
 |**DC**              | Data Concentrator: connecting point between an information system and a group of smart meters
@@ -29,6 +30,7 @@
 |**Operating system**| System software that manages device hardware, software resources, and provides common services for programs
 |**PLC**             | Power Line Communication: data transmission over electric power distribution wires
 |**python**          | An interpreted programming language (can be executed without compilation)
+|**Recipe**          | {#recipe} Metadata files specifying how a particular package is built
 |**Repo** (tool)     | Tool for managing Git repositories, doing the uploads and automating parts of the development workflow
 |**Root file system**| File system containing files and directories critical for operating system operation, including the device directory and programs for starting the system.
 |**RTE**             | Runtime Environment: small operating system providing all the functionality necessary for a program to run.
@@ -41,4 +43,4 @@
 |**Virtual machine** | Software that functions as a virtual computer
 |**VSCode**          | Visual Studio Code: source code editor including building and debugging functions
 |**Yocto**           | The Yocto Project. Helps developers creating custom Linux-based systems
-|**Ubuntu Software**| Ubuntu Linux comes with a default software center that lets install various software
+|**Ubuntu Software** | <a name="recipe2"/>Ubuntu Linux comes with a default software center that lets install various software

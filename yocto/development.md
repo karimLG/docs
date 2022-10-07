@@ -178,7 +178,7 @@ devtool is a convenient command for building and deploying programs to be debugg
 CF. [Yocto docs](https://docs.yoctoproject.org/ref-manual/devtool-reference.html)
 
 Main options are:\
-    `<recipe>`: recipe to modify\
+    `<recipe>`: [recipe](/glossary.md#recipe) [recipe](/glossary.md#recipe2) to modify\
     `<host>`: deployment target
 
 To modify the source for a recipe:
