@@ -38,14 +38,12 @@ It secures it by adding automatic tests and a dedicated code review tool.
 It is not possible to directly push changes to the [git] repository, it has to be proposed first.
 >Note when sources has changed, commit identifier update should be considered in relative [recipes]
 
-## Verification
-Once proposed, verification is done by [jenkins].
-It can include building and automatic tests.
-On success change is proposed for reviewing.
-
-## Review
-Reviewers can comment or add or remove points.
-When the score reaches +2 code can be tracked.
+Modifications are done in several steps:
+1. modification on a local [git] clone
+2. Proposal to [gerrit]
+3. automatic verification by [jenkins]
+4. code review by team members with [gerrit]
+5. submission from [gerrit] to [git] 
 
 ## Proposing a change
 On a local clone, and once the change is tested, the regular workflow is:
@@ -87,10 +85,18 @@ git push <remote> <local commit>:refs/for/<remote branch>
 `<local commit>` from `git log --graph --oneline`\
 `<remote branch>` from `git branch -r`
 
+## Verification
+Once proposed, verification is done by [jenkins].
+It can include building and automatic tests.
+On success change is proposed for reviewing.
+
+## Review
+Reviewers can comment or add or remove points.
+When the score reaches +2 code can be tracked.
+
+
 >**/!\ TODO continue**
 ### Assign reviewers
-
-### commit
 
 
 [DC]: /glossary.md#dc
