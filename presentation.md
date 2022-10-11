@@ -2,7 +2,8 @@
 
 This repository contains documentation on the [Yocto] project for data concentrators.
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # [Yocto] project presentation
 The [Yocto] project is an open-source collaboration project that helps developers create custom [Linux]-based systems.
