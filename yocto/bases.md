@@ -1,6 +1,7 @@
 # [Yocto] for [DC] project bases
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # [Yocto] Principle
 

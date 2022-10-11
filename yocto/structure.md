@@ -3,7 +3,8 @@
 The project is spread over several [git] repositories containing a [Yocto] project layer or the sources of a software component.
 These repositories are unified by the [repo] tool.
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # [Yocto] structure
 The [Yocto] structure goal is to be generic for all the existent and future data concentrators.

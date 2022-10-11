@@ -1,6 +1,7 @@
  # [Visual Studio] and [VisualGDB] usage for [Yocto] / [DC]
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # Presentation
 [Visual Studio] + [VisualGDB] can conveniently be used as [Windows] cross-development suite for the [Yocto] environment.

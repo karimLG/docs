@@ -1,7 +1,8 @@
 # [Yocto] for [DC] setup
 This document describes how to set the working environment for [DC] development using the [Yocto] project.
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 ## [DC] connection
 The [DC] can be connected to the development system on several ports.

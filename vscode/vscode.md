@@ -1,6 +1,7 @@
  # Visual Studio Code usage for [Yocto] / [DC]
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # Presentation
 [VSCode] can be used as development software in the [Yocto] environment.
