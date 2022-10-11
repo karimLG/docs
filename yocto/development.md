@@ -4,7 +4,8 @@ It describes how to set the working environment and how to build and test a [DC]
 
 >Note: working environment must be correctly [setup](/yocto/setup.md)
 
-[TOC]{#toc}
+{#toc}
+[TOC]
 
 # [DC] project architecture
 
