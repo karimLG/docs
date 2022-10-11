@@ -1,16 +1,16 @@
- # Visual Studio Code usage for Yocto / [DC]
+ # Visual Studio Code usage for [Yocto] / [DC]
 
-[TOC]
+[TOC]{#toc}
 
 # Presentation
-VSCode can be used as development software in the Yocto environment.
+[VSCode] can be used as development software in the [Yocto] environment.
 
 Cf. [code.visualstudio.com/docs](https://code.visualstudio.com/docs), [license](https://code.visualstudio.com/license)
 
 # Installation
-In this document, VSCode is used to illustrate the use of the development software in the Yocto environment.
+In this document, [VSCode] is used to illustrate the use of the development software in the [Yocto] environment.
 
-VSCode can be installed from Ubuntu Software.\
+[VSCode] can be installed from [Ubuntu Software].\
 ![](/images/VSCode_000.png)
 
 ## C/C++ extensions
@@ -19,7 +19,7 @@ Add C/C++ and C/C++ Extension Pack extensions.\
 ![](/images/VSCode_002.png)
 
 # Developpment
-*VSCode* must be run from a [initialized SDK environment](/startup.md/#initialize-sdk-environment):\
+[VSCode] must be run from a [initialized SDK environment](/startup.md/#initialize-sdk-environment):\
     `<workspace>`: project folder
 ```bash
 . /opt/landis/0.1/environment-setup-cortexa8t2hf-neon-poky-linux-gnueabi
@@ -54,7 +54,7 @@ Project can be build from `Terminal/Run Build Task... (Ctrl+Shift+B)` menu
 and clean from `Terminal/Run Task...` menu (`make clean`).
 
 ## Debug
-A script file must be created to source the SDK before starting the debugger.
+A script file must be created to source the [SDK] before starting the debugger.
 Create `~/.config/Code/User/YoctoSdkGdb.sh`:
 ```bash
 . /opt/landis/0.1/environment-setup-cortexa8t2hf-neon-poky-linux-gnueabi && $GDB $@
@@ -80,7 +80,7 @@ In the project folder, create or add debug launch tasks configuration in `.vscod
 }
 ```
 
-gdbserver must be run in the [DC] to launch the application to be debugged:\
+[gdbserver] must be run in the [DC] to launch the application to be debugged:\
     `<application>`: path to the application
 ```bash
 gdbserver :3389 <application> --no-background --verbose
@@ -92,3 +92,8 @@ or `Run and Debug (Ctrl+Shift+D)` perspective.\
 
 
 [DC]: /glossary.md#dc
+[gdbserver]: /glossary.md#gdbserver
+[SDK]: /glossary.md#sdk
+[VSCode]: /glossary.md#vscode
+[Ubuntu Software]: /glossary.md#ubuntusoftware
+[Yocto]: /glossary.md#yocto

@@ -1,4 +1,4 @@
-# Yocto for DC
+# [Yocto] for DC
 
 * [Home][home]
 * [Structure](/yocto/structure.md)
@@ -7,3 +7,5 @@
 
 [home]: /presentation.md
 [logo]: /images/logo.png
+
+[Yocto]: /glossary.md#yocto

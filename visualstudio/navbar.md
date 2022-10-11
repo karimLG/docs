@@ -2,10 +2,7 @@
 
 * [Home][home]
 * [Structure](/yocto/structure.md)
-* [Setup](/yocto/setup.md)
-* [Development](/yocto/development.md)
-* [VSCode](/vscode/development.md)
-* [Cross dev.](/cross/visualstudio.md)
+* [Visual studio license](https://https://visualstudio.microsoft.com/license-terms/)
 * [Glossary](/glossary.md)
 
 [home]: /presentation.md
