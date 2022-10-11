@@ -33,6 +33,7 @@ Cf. [jenkins.io](https://www.jenkins.io)\
 |                                               |                                  |
 |-----------------------------------------------|----------------------------------|
 |**[Presentation](/presentation.md)**           | [Yocto] project presentation     |
+|**[Basis](/yocto/bases.md)**                   | bases of [Yocto] for [DC]        |
 |**[Structure](/yocto/structure.md)**           | [Yocto] project structure        |
 |**[Setup](/yocto/setup.md)**                   | Workspace configuration          |
 |**[Development](/yocto/development.md)**       | Basic development operations     |
