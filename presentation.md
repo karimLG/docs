@@ -2,6 +2,7 @@
 
 This repository contains documentation on the [Yocto] project for data concentrators.
 
+{#toc}
 [TOC]
 
 # [Yocto] project presentation
